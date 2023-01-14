@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Katarzyna Majchrzak">
+
+    <!-- Other -->
+    <title>Świat kotów</title>
+    <script src="https://kit.fontawesome.com/7972164f68.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- JS -->
+    <script src="../scripts/sidenav.js"></script>
+
+</head>
+
+<body onload="cookieFlow()">
+    <!-- Page type information -->
+    <!-- <div class="mx-3">
+        <p class="text-end"> <b> Strona zaprojektowana według wzorca Z </b> </p>
+    </div> -->
+    <!-- Page type information -->
+
+    <!-- Page body -->
+    <div class="container-fluid my-5">
+        <!-- Side navigation -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Strona główna</a>
+            <a href="./about.html">O mnie</a>
+            <a href="./contact.html">Kontakt</a>
+        </div>
+        <!-- Side navigation -->
+
+        <!-- Page content container -->
+        <div id="main-container" class="container shadow-lg mt-5">
+
+            <!-- Menu container -->
+            <div id="title-container" class="row shadow">
+                <div class="mask">
+                    <div class="col text-center my-5">
+                        <div id="menu" class="row mt-5">
+                            <h1 id="title" class="my-5 text-white"> Świat kotów <i class="fas fa-paw"></i> </h1>
+                            </h1>
+                            <div class="col-1 ms-auto">
+                                <button class="btn btn-lg col-12" onclick="openNav()">&#9776;</button>
+                            </div>
+                            <div class="col-3">
+                                <a href="../index.html"> <button type="button" class="btn btn-lg text-white col-12"> <i
+                                            class="fas fa-paw"></i>
+                                        Strona Głowna <i class="fas fa-paw"></i> </button> </a>
+                            </div>
+                            <div class="col-2">
+                                <a href="./about.html"> <button type="button" class="btn btn-lg text-white col-12"> <i
+                                            class="fas fa-paw"></i>
+                                        O mnie <i class="fas fa-paw"></i> </button> </a>
+                            </div>
+                            <div class="col-2">
+                                <a href="./contact.html"> <button type="button" class="btn btn-lg text-white col-12"> <i
+                                            class="fas fa-paw"></i>
+                                        Kontakt <i class="fas fa-paw"></i> </button> </a>
+                            </div>
+                            <div class="col-3 me-auto">
+                                <button type="button" class="btn btn-lg text-white col-12" id="articles-collapsible"> <i
+                                            class="fas fa-paw"></i>
+                                        Artykuły <i class="fas fa-paw"></i> </button>
+                                <div class="articles-content">
+                                    <a href="./article.html"> Artykuł o kotkach </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu container -->
+
+
+            <!-- Main content -->
+            <div id="main-content" class="row">
+                <div id="main-col" class="col m-5">
+
+
+                    <!-- Main text section -->
+                    <section>
+                        <h1 class="text-start">Zdrowe i pełnowartościowe żywienie</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum tortor, mattis vitae
+                            tortor pellentesque, vehicula suscipit dolor. Mauris diam nibh, pellentesque et accumsan
+                            sed,
+                            placerat iaculis tortor. Maecenas rhoncus nisl nec leo molestie bibendum. Sed tincidunt,
+                            lacus
+                            eu volutpat mattis, sem nisi euismod elit, eget malesuada tortor odio ac lectus. In hac
+                            habitasse platea dictumst. Fusce gravida ante quis est placerat dignissim. Vestibulum
+                            porttitor
+                            at diam vel dictum. Quisque feugiat libero nec pretium vulputate. Nulla quis purus laoreet,
+                            tincidunt arcu at, condimentum dolor. Proin sit amet facilisis leo.
+
+                            Maecenas in venenatis leo, nec gravida lacus. Morbi fermentum leo eleifend massa fermentum
+                            rutrum. Curabitur id nisl arcu. Ut cursus lobortis fringilla. Phasellus suscipit purus sit
+                            amet
+                            tincidunt egestas. Vestibulum nec arcu nec justo mattis dapibus eu et mi. Nam et neque
+                            efficitur, venenatis lectus sed, consectetur magna. Sed sed leo ac felis aliquet dictum. In
+                            tortor leo, mattis nec diam nec, eleifend mattis dolor. Phasellus placerat faucibus nibh nec
+                            sagittis.<br><br>
+
+                            Morbi viverra magna facilisis accumsan eleifend. Pellentesque pulvinar magna sit amet metus
+                            hendrerit iaculis. Sed convallis nulla quis diam posuere semper. Donec mauris ipsum, euismod
+                            vitae sem nec, mollis pharetra sem. Etiam hendrerit placerat egestas. Sed et erat vel sapien
+                            faucibus tristique. Ut suscipit sit amet augue ut rutrum. Aliquam sagittis mauris at
+                            eleifend
+                            molestie. Pellentesque laoreet dolor massa, nec aliquet mi eleifend vitae. Curabitur at enim
+                            quam. Suspendisse potenti. Aliquam vel est a ante elementum semper sit amet non
+                            nisi.
+                            Nulla facilisi. Nam a gravida tellus, et varius tellus. Duis ullamcorper
+                            nibh faucibus
+                            libero
+                            maximus vestibulum. Proin blandit scelerisque orci, vel dapibus ipsum faucibus vitae. Ut vel
+                            ante nec diam tempor luctus. Vestibulum efficitur tortor nisl, in tempus augue porttitor id.
+                            Donec et ante congue sem imperdiet iaculis nec quis nisl. Nullam elementum diam est, eu
+                            egestas
+                            mauris placerat et.
+                        </p>
+                        <h2>Lorem ipsum</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum tortor, mattis vitae
+                            tortor pellentesque, vehicula suscipit dolor. Mauris diam nibh, pellentesque et accumsan
+                            sed,
+                            placerat iaculis tortor. Maecenas rhoncus nisl nec leo molestie bibendum. Sed tincidunt,
+                            lacus
+                            eu volutpat mattis, sem nisi euismod elit, eget malesuada tortor odio ac lectus. In hac
+                            habitasse platea dictumst. Fusce gravida ante quis est placerat dignissim. Vestibulum
+                            porttitor
+                            at diam vel dictum. Quisque feugiat libero nec pretium vulputate. Nulla quis purus laoreet,
+                            tincidunt arcu at, condimentum dolor. Proin sit amet facilisis leo.
+
+                            Maecenas in venenatis leo, nec gravida lacus. Morbi fermentum leo eleifend massa fermentum
+                            rutrum. Curabitur id nisl arcu. Ut cursus lobortis fringilla. Phasellus suscipit purus sit
+                            amet
+                            tincidunt egestas. Vestibulum nec arcu nec justo mattis dapibus eu et mi. Nam et neque
+                            efficitur, venenatis lectus sed, consectetur magna. Sed sed leo ac felis aliquet dictum. In
+                            tortor leo, mattis nec diam nec, eleifend mattis dolor. Phasellus placerat faucibus nibh nec
+                            sagittis.<br><br>
+
+                            Morbi viverra magna facilisis accumsan eleifend. Pellentesque pulvinar magna sit amet metus
+                            hendrerit iaculis. Sed convallis nulla quis diam posuere semper. Donec mauris ipsum, euismod
+                            vitae sem nec, mollis pharetra sem. Etiam hendrerit placerat egestas. Sed et erat vel sapien
+                            faucibus tristique. Ut suscipit sit amet augue ut rutrum. Aliquam sagittis mauris at
+                            eleifend
+                            molestie. Pellentesque laoreet dolor massa, nec aliquet mi eleifend vitae. Curabitur at enim
+                            quam. Suspendisse potenti. Aliquam vel est a ante elementum semper sit amet non
+                            nisi.
+                            Nulla facilisi. Nam a gravida tellus, et varius tellus. Duis ullamcorper
+                            nibh faucibus
+                            libero
+                            maximus vestibulum. Proin blandit scelerisque orci, vel dapibus ipsum faucibus vitae. Ut vel
+                            ante nec diam tempor luctus. Vestibulum efficitur tortor nisl, in tempus augue porttitor id.
+                            Donec et ante congue sem imperdiet iaculis nec quis nisl. Nullam elementum diam est, eu
+                            egestas
+                            mauris placerat et.
+                        </p>
+
+                        <img src="../assets/images/eating_cat.jpeg" class="rounded-3 img-fluid w-75 mx-auto d-block my-5"
+                            alt="Zdjęcie kota jedzącego kocią karmę z ręki właściciela">
+
+                        <h3>Lorem ipsum</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum tortor, mattis vitae
+                            tortor pellentesque, vehicula suscipit dolor. Mauris diam nibh, pellentesque et accumsan
+                            sed,
+                            placerat iaculis tortor. Maecenas rhoncus nisl nec leo molestie bibendum. Sed tincidunt,
+                            lacus
+                            eu volutpat mattis, sem nisi euismod elit, eget malesuada tortor odio ac lectus. In hac
+                            habitasse platea dictumst. Fusce gravida ante quis est placerat dignissim. Vestibulum
+                            porttitor
+                            at diam vel dictum. Quisque feugiat libero nec pretium vulputate. Nulla quis purus laoreet,
+                            tincidunt arcu at, condimentum dolor. Proin sit amet facilisis leo.
+
+                            Maecenas in venenatis leo, nec gravida lacus. Morbi fermentum leo eleifend massa fermentum
+                            rutrum. Curabitur id nisl arcu. Ut cursus lobortis fringilla. Phasellus suscipit purus sit
+                            amet
+                            tincidunt egestas. Vestibulum nec arcu nec justo mattis dapibus eu et mi. Nam et neque
+                            efficitur, venenatis lectus sed, consectetur magna. Sed sed leo ac felis aliquet dictum. In
+                            tortor leo, mattis nec diam nec, eleifend mattis dolor. Phasellus placerat faucibus nibh nec
+                            sagittis.
+                        </p>
+
+
+                        <h6>Ranking ulubionych karm mojego kota</h6>
+                        <ol>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                            <li>lorem ipsum</li>
+                        </ol>
+                        <p>
+                            Morbi viverra magna facilisis accumsan eleifend. Pellentesque pulvinar magna sit amet
+                            metus
+                            hendrerit iaculis. Sed convallis nulla quis diam posuere semper. Donec mauris ipsum,
+                            euismod
+                            vitae sem nec, mollis pharetra sem. Etiam hendrerit placerat egestas. Sed et erat vel
+                            sapien
+                            faucibus tristique. Ut suscipit sit amet augue ut rutrum. Aliquam sagittis mauris at
+                            eleifend
+                            molestie. Pellentesque laoreet dolor massa, nec aliquet mi eleifend vitae. Curabitur at
+                            enim
+                            quam. Suspendisse potenti. Aliquam vel est a ante elementum semper sit amet non
+                            nisi.
+                            Nulla facilisi. Nam a gravida tellus, et varius tellus. Duis ullamcorper
+                            nibh faucibus
+                            libero
+                            maximus vestibulum. Proin blandit scelerisque orci, vel dapibus ipsum faucibus vitae. Ut
+                            vel
+                            ante nec diam tempor luctus. Vestibulum efficitur tortor nisl, in tempus augue porttitor
+                            id.
+                            Donec et ante congue sem imperdiet iaculis nec quis nisl. Nullam elementum diam est, eu
+                            egestas
+                            mauris placerat et.
+                        </p>
+
+                        <h4>Lorem ipsum</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum tortor, mattis
+                            vitae
+                            tortor pellentesque, vehicula suscipit dolor. Mauris diam nibh, pellentesque et accumsan
+                            sed,
+                            placerat iaculis tortor. Maecenas rhoncus nisl nec leo molestie bibendum. Sed tincidunt,
+                            lacus
+                            eu volutpat mattis, sem nisi euismod elit, eget malesuada tortor odio ac lectus. In hac
+                            habitasse platea dictumst. Fusce gravida ante quis est placerat dignissim. Vestibulum
+                            porttitor
+                            at diam vel dictum. Quisque feugiat libero nec pretium vulputate. Nulla quis purus
+                            laoreet,
+                            tincidunt arcu at, condimentum dolor. Proin sit amet facilisis leo.
+
+                            Maecenas in venenatis leo, nec gravida lacus. Morbi fermentum leo eleifend massa
+                            fermentum
+                            rutrum. Curabitur id nisl arcu. Ut cursus lobortis fringilla. Phasellus suscipit purus
+                            sit
+                            amet
+                            tincidunt egestas. Vestibulum nec arcu nec justo mattis dapibus eu et mi. Nam et neque
+                            efficitur, venenatis lectus sed, consectetur magna. Sed sed leo ac felis aliquet dictum.
+                            In
+                            tortor leo, mattis nec diam nec, eleifend mattis dolor. Phasellus placerat faucibus nibh
+                            nec
+                            sagittis.<br><br>
+
+                            Morbi viverra magna facilisis accumsan eleifend. Pellentesque pulvinar magna sit amet
+                            metus
+                            hendrerit iaculis. Sed convallis nulla quis diam posuere semper. Donec mauris ipsum,
+                            euismod
+                            vitae sem nec, mollis pharetra sem. Etiam hendrerit placerat egestas. Sed et erat vel
+                            sapien
+                            faucibus tristique. Ut suscipit sit amet augue ut rutrum. Aliquam sagittis mauris at
+                            eleifend
+                            molestie. Pellentesque laoreet dolor massa, nec aliquet mi eleifend vitae. Curabitur at
+                            enim
+                            quam. Suspendisse potenti. Aliquam vel est a ante elementum semper sit amet non
+                            nisi.
+                            Nulla facilisi. Nam a gravida tellus, et varius tellus. Duis ullamcorper
+                            nibh faucibus
+                            libero
+                            maximus vestibulum. Proin blandit scelerisque orci, vel dapibus ipsum faucibus vitae. Ut
+                            vel
+                            ante nec diam tempor luctus. Vestibulum efficitur tortor nisl, in tempus augue porttitor
+                            id.
+                            Donec et ante congue sem imperdiet iaculis nec quis nisl. Nullam elementum diam est, eu
+                            egestas
+                            mauris placerat et.
+                        </p>
+
+                        <div class="table-responsive">
+                            <table
+                                class="table table-striped table-hover rounded-3 w-75 mx-auto table-bordered border-dark text-center align-middle">
+                                <thead>
+                                    <th>#</th>
+                                    <th>Lorem ipsum</th>
+                                    <th>Lorem ipsum</th>
+                                    <th>Lorem ipsum</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>lorem ipsum</td>
+                                        <td>lorem ipsum</td>
+                                        <td>lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>lorem ipsum</td>
+                                        <td>lorem ipsum</td>
+                                        <td>lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td colspan="2">lorem ipsum
+                                        </td>
+                                        <td>lorem ipsum</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>lorem ipsum</td>
+                                        <td colspan="2" rowspan="2">lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>lorem ipsum</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </section>
+                    <!-- Main text section -->
+
+                </div>
+            </div>
+            <!-- Main content -->
+
+
+            <!-- Footer -->
+            <div id="footer" class="row pt-5">
+                <!-- Footer page hyperlinks row -->
+                <div class="col-4 text-center text-white-50">
+                    <a href="../index.html">Strona główna</a>
+                </div>
+                <div class=" col-4 border-end border-start text-center  text-white-50">
+                    <a href="./about.html">O mnie</a>
+                </div>
+                <div class="col-4 text-center  text-white-50">
+                    <a href="./contact.html">Kontakt</a>
+                </div>
+                <!-- Footer page hyperlinks row -->
+
+                <!-- Footer social media row -->
+                <div class="col-12">
+                    <div class="row px-5 py-3">
+                        <div class="col-12 border-top text-center pt-1">
+                            <div class="row mt-3">
+
+                                <!-- Instagram link -->
+                                <div class="col-4 text-white text-end">
+                                    <a href="https://www.instagram.com" target="_blank">
+                                        <i class="fab fa-instagram fa-3x"></i>
+                                    </a>
+                                </div>
+                                <!-- Instagram link -->
+
+                                <!-- Twitter link -->
+                                <div class="col-4 text-white">
+                                    <a href="https://www.twitter.com" target="_blank">
+                                        <i class="fab fa-twitter-square fa-3x"></i><br>
+                                    </a>
+                                </div>
+                                <!-- Twitter link -->
+
+                                <!-- Facebook link -->
+                                <div class="col-4 text-white text-start">
+                                    <a href="https://www.facebook.com" target="_blank">
+                                        <i class="fab fa-facebook-square fa-3x"></i><br>
+                                    </a>
+                                </div>
+                                <!-- Facebook link -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer social media row -->
+            </div>
+            <!-- Footer -->
+
+        </div>
+        <!-- Page content container -->
+
+    </div>
+    <!-- Page body -->
+
+    <!-- Cookie banner -->
+    <div class="row" id="cookie">
+        <div class="col-12 text-center text-white">
+            <p class="my-2">
+                Strona korzysta z plików cookie w celu realizacji usług zgodnie z Polityką Cookies.
+                <button class="btn btn-sm text-white" id="cookie-accept"><i class="fas fa-paw"></i> Akceptuj i kontynuuj</button>
+            </p>
+        </div>
+    </div>
+    <!-- Cookie banner -->
+
+    <!-- Scripts -->
+        
+    <script src="../scripts/collapsible.js"></script>
+    <script src="../scripts/cookie.js"></script>
+
+</body>
+
+</html>

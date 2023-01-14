@@ -1,0 +1,309 @@
+body {
+  text-align: justify;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #cf9adb;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #a15786;
+}
+
+#main-container {
+  border-radius: 50px;
+  background-color: rgb(213, 202, 223);
+}
+
+#title-container {
+  background-image: url(https://cdn.pixabay.com/photo/2019/05/08/21/21/cat-4189697_960_720.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cf9adb;
+  font-family: Pacifico;
+  border-radius: 50px;
+}
+
+.mask {
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+#title {
+  text-shadow: 0px 0px 10px black;
+}
+
+#read-more {
+  color: #a15786;
+}
+
+#read-more:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.btn {
+  color: white;
+  border-radius: 50px;
+  background-color: transparent;
+  border-color: #a15786;
+  text-shadow: 0px 0px 10px black;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #a15786;
+  border-color: #a15786;
+  text-shadow: none;
+}
+
+#newsletter {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#newsletter-title {
+  font-family: Pacifico;
+  color: white;
+  background-color: #a15786;
+  border-radius: 50px;
+}
+
+#newsletter-btn {
+  font-family: Pacifico;
+  color: #a15786;
+  text-shadow: none;
+}
+
+#newsletter-btn:hover {
+  font-family: Pacifico;
+  color: white;
+  text-shadow: none;
+}
+
+#contactform {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#contactform-title {
+  font-family: Pacifico;
+  color: white;
+  background-color: #a15786;
+  border-radius: 50px;
+}
+
+#contactform-btn {
+  font-family: Pacifico;
+  color: #a15786;
+  text-shadow: none;
+}
+
+#contactform-btn:hover {
+  font-family: Pacifico;
+  color: white;
+  text-shadow: none;
+}
+
+.form-control {
+  border-radius: 50px;
+}
+
+.card {
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+.card-header {
+  background-color: #a15786;
+  color: white;
+  border-radius: 50px;
+}
+
+.card-title {
+  border-radius: 50px;
+}
+
+#footer {
+  color: gray;
+  background-color: rgb(63, 59, 59);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#footer a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+#footer a:hover {
+  color: #a15786;
+}
+
+#cookie {
+  background-color: #cf9adb;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.articles-content {
+  padding: 15px;
+  visibility: hidden;
+  background-color: #a15786c1;
+  width: 80%;
+  margin: auto;
+}
+
+.articles-content:hover {
+  background-color: #a15786;
+}
+
+.articles-content:last-of-type {
+  border-radius: 0 0 15px 15px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #cf9adb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #a15786;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  opacity: 1;
+  animation: fade 1.5s forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
